@@ -62,7 +62,7 @@ export function ImportBreakpoints() {
         base_message + ` and loaded ${breakpoints.length}`
       );
     }
-  } catch (e) {
+  } catch (e: any) {
     vscode.window.showInformationMessage(e);
     Log(e);
   }

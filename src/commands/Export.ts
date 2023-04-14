@@ -42,7 +42,7 @@ export function ExportBreakpoints() {
         breakpoints_json,
         { encoding: "utf8" }
       );
-    } catch (error) {
+    } catch (error: any) {
       Log(error);
     }
   } else {
